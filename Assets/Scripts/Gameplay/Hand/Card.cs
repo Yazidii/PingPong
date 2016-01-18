@@ -26,6 +26,10 @@ public class Card : MonoBehaviour {
 	MeshRenderer directionText;
 	MeshRenderer descriptionText;
 	Sprite cardFront;
+	Collider collider;
+
+	Transform cardGraphics;
+	Transform cardSpriteObject;
 
 	public bool hover = false;
 
@@ -34,10 +38,16 @@ public class Card : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		cardSpriteRenderer = transform.GetChild(0).GetComponent<SpriteRenderer>();
-		speedText = transform.Find("Speed").GetComponent<MeshRenderer>();
-		directionText = transform.Find("Direction").GetComponent<MeshRenderer>();
-		descriptionText = transform.Find("Description").GetComponent<MeshRenderer>();
+		cardGraphics = transform.Find("Graphics");
+		cardSpriteObject = cardGraphics.Find("Sprite");
+
+		cardSpriteRenderer = cardSpriteObject.GetComponent<SpriteRenderer>();
+		speedText = cardGraphics.Find("Speed").GetComponent<MeshRenderer>();
+		directionText = cardGraphics.Find("Direction").GetComponent<MeshRenderer>();
+		descriptionText = cardGraphics.Find("Description").GetComponent<MeshRenderer>();
+
+
+
 		speedText.sortingLayerName = "CardText";
 		directionText.sortingLayerName = "CardText";
 		descriptionText.sortingLayerName = "CardText";
@@ -47,6 +57,9 @@ public class Card : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+
+
 		UpdateCardPosition();
 		UpdateCardGraphics();
 
@@ -64,25 +77,25 @@ public class Card : MonoBehaviour {
 
 	void UpdateCardPosition()
 	{				
-		if (transform.rotation.eulerAngles.y != targetRotation)
+		if (cardGraphics.rotation.eulerAngles.y != targetRotation)
 		{
 			 Vector3 to = new Vector3(0, targetRotation, 0);
-	         if (Vector3.Distance(transform.eulerAngles, to) > 0.01f)
+	         if (Vector3.Distance(cardGraphics.eulerAngles, to) > 0.01f)
 	         {
-	             transform.eulerAngles = Vector3.Lerp(transform.rotation.eulerAngles, to,rotationRate * Time.deltaTime);
+	             cardGraphics.eulerAngles = Vector3.Lerp(cardGraphics.rotation.eulerAngles, to,rotationRate * Time.deltaTime);
 	         }
 	         else
 	         {
-	             transform.eulerAngles = to;
+	             cardGraphics.eulerAngles = to;
 	         }
      	}
 	}
 
 	void UpdateCardGraphics()
 	{
-	    if (transform.rotation.eulerAngles.y > 90 && transform.rotation.eulerAngles.y < 270)
+	    if (cardGraphics.rotation.eulerAngles.y > 90 && cardGraphics.rotation.eulerAngles.y < 270)
  		{
- 			transform.GetChild(0).localScale = new Vector3(-1, 1, 1);		
+ 			cardSpriteObject.localScale = new Vector3(-1, 1, 1);		
  			front = true;
  			cardSpriteRenderer.sprite = cardFront;
  			speedText.GetComponent<Renderer>().enabled = true;
@@ -92,7 +105,7 @@ public class Card : MonoBehaviour {
  		}
  		else
  		{
- 			transform.GetChild(0).localScale = new Vector3(1, 1, 1);
+ 			cardSpriteObject.localScale = new Vector3(1, 1, 1);
  			front = false;
 			cardSpriteRenderer.sprite = Back;
  			speedText.GetComponent<Renderer>().enabled = false;		
@@ -106,8 +119,18 @@ public class Card : MonoBehaviour {
 
 	}
 
-	void OnMouseHover()
+	void OnMouseEnter()
 	{
-		hover = true;
+		FlipCard();
+	}
+
+	void OnMouseExit()
+	{
+		FlipCard();
+	}
+
+	void OnMouseDown()
+	{
+		FlipCard();
 	}
 }
