@@ -1,0 +1,1728 @@
+Mono path[0] = 'D:/Work/Development/Unity 5/PingPong/PingPong/dev_Data/Managed'
+Mono path[1] = 'D:/Work/Development/Unity 5/PingPong/PingPong/dev_Data/Mono'
+Mono config path = 'D:/Work/Development/Unity 5/PingPong/PingPong/dev_Data/Mono/etc'
+PlayerConnection initialized from D:/Work/Development/Unity 5/PingPong/PingPong/dev_Data (debug = 0)
+PlayerConnection initialized network socket : 0.0.0.0 55465
+Multi-casting "[IP] 192.168.0.104 [Port] 55465 [Flags] 2 [Guid] 3940927912 [EditorId] 3218912827 [Version] 1048832 [Id] WindowsPlayer(DESKTOP-SL44U2T) [Debug] 0" to [225.0.0.222:54997]...
+PlayerConnection already initialized - listening to [192.168.0.104:55465]
+Initialize engine version: 5.1.3f1 (b0a23b31c3d8)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 10.1]
+    Renderer: Intel(R) HD Graphics 3000 (ID=0x116)
+    Vendor:   Intel
+    VRAM:     816 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: D:\Work\Development\Unity 5\PingPong\PingPong\dev_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\Work\Development\Unity 5\PingPong\PingPong\dev_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\Work\Development\Unity 5\PingPong\PingPong\dev_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\Work\Development\Unity 5\PingPong\PingPong\dev_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: D:\Work\Development\Unity 5\PingPong\PingPong\dev_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading D:\Work\Development\Unity 5\PingPong\PingPong\dev_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: D:\Work\Development\Unity 5\PingPong\PingPong\dev_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading D:\Work\Development\Unity 5\PingPong\PingPong\dev_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: D:\Work\Development\Unity 5\PingPong\PingPong\dev_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading D:\Work\Development\Unity 5\PingPong\PingPong\dev_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+Platform assembly: D:\Work\Development\Unity 5\PingPong\PingPong\dev_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.064 seconds
+desktop: 1920x1080 60Hz; virtual: 3286x1080 at -1366,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: D:\Work\Development\Unity 5\PingPong\PingPong\dev_Data\Managed\System.dll (this message is harmless)
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+180
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Card:FlipCard() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:60)
+Card:Update() (at D:\Work\Development\Unity 5\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\Card.cs:53)
+ 
+(Filename: D:/Work/Development/Unity 5/PingPong/PingPong/Assets/Scripts/Gameplay/Hand/Card.cs Line: 60)
+
