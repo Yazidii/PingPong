@@ -7,28 +7,30 @@ public class Card : MonoBehaviour {
 	public Sprite FrontRed;
 	public Sprite FrontGray;
 	public Sprite Back;
-	private struct Values 
-	{
-		private int speed;
-		private int direction;
-		private bool right;
-	}
 
 	private float targetRotation = 0;
 	private float startRotation;
 	private float rotationRate = 9;
 	public bool front = false;
 
-
 	//Card Properties and Components
-	SpriteRenderer cardSpriteRenderer;
-	MeshRenderer speedText;
-	MeshRenderer directionText;
-	MeshRenderer descriptionText;
-	Sprite cardFront;
-	Collider collider;
+	public int CardSpeed;
+	public int CardDirectionValue;
+	public bool CardDirectionIsRight;
 
-	Transform cardGraphics;
+	SpriteRenderer cardSpriteRenderer;
+
+	MeshRenderer speedTextRenderer;
+	MeshRenderer directionTextRenderer;
+	MeshRenderer descriptionTextRenderer;
+
+	TextMesh speedText;
+	TextMesh directionText;
+	TextMesh descriptionText;
+	Sprite cardFront;
+    Collider collider;
+
+    Transform cardGraphics;
 	Transform cardSpriteObject;
 
 	public bool hover = false;
@@ -42,25 +44,34 @@ public class Card : MonoBehaviour {
 		cardSpriteObject = cardGraphics.Find("Sprite");
 
 		cardSpriteRenderer = cardSpriteObject.GetComponent<SpriteRenderer>();
-		speedText = cardGraphics.Find("Speed").GetComponent<MeshRenderer>();
-		directionText = cardGraphics.Find("Direction").GetComponent<MeshRenderer>();
-		descriptionText = cardGraphics.Find("Description").GetComponent<MeshRenderer>();
+		speedText = cardGraphics.Find("Speed").GetComponent<TextMesh>();
+		directionText = cardGraphics.Find("Direction").GetComponent<TextMesh>();
+		descriptionText = cardGraphics.Find("Description").GetComponent<TextMesh>();
+
+		speedTextRenderer = cardGraphics.Find("Speed").GetComponent<MeshRenderer>();
+		directionTextRenderer = cardGraphics.Find("Direction").GetComponent<MeshRenderer>();
+		descriptionTextRenderer = cardGraphics.Find("Description").GetComponent<MeshRenderer>();
+
+		speedText.text = CardSpeed.ToString();
+		directionText.text = CardDirectionIsRight ? "Right: " : "Left: " + CardDirectionValue.ToString();
 
 
-
-		speedText.sortingLayerName = "CardText";
-		directionText.sortingLayerName = "CardText";
-		descriptionText.sortingLayerName = "CardText";
+		speedTextRenderer.sortingLayerName = "CardText";
+		directionTextRenderer.sortingLayerName = "CardText";
+		descriptionTextRenderer.sortingLayerName = "CardText";
 
 		cardFront = FrontGray;
+
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
 
-
+		//Call to rotate or move card
 		UpdateCardPosition();
+
+		//Call to update card graphics to what they should currently be
 		UpdateCardGraphics();
 
 		if (Input.GetKeyDown("space"))
