@@ -13,12 +13,17 @@ public class Card : MonoBehaviour {
 	private float rotationRate = 9;
 	public bool front = false;
 
-	//Card Properties and Components
-	public int CardSpeed;
+    bool mouseDown = false;
+
+    //Card Properties and Components
+    public int CardSpeed;
 	public int CardDirectionValue;
 	public bool CardDirectionIsRight;
 
-	SpriteRenderer cardSpriteRenderer;
+    Vector3 targetPosition;
+    float cardMovingSpeed = 0.8f;
+
+    SpriteRenderer cardSpriteRenderer;
 
 	MeshRenderer speedTextRenderer;
 	MeshRenderer directionTextRenderer;
@@ -28,7 +33,7 @@ public class Card : MonoBehaviour {
 	TextMesh directionText;
 	TextMesh descriptionText;
 	Sprite cardFront;
-    Collider collider;
+    //Collider collider;
 
     Transform cardGraphics;
 	Transform cardSpriteObject;
@@ -53,7 +58,7 @@ public class Card : MonoBehaviour {
 		descriptionTextRenderer = cardGraphics.Find("Description").GetComponent<MeshRenderer>();
 
 		speedText.text = CardSpeed.ToString();
-		directionText.text = CardDirectionIsRight ? "Right: " : "Left: " + CardDirectionValue.ToString();
+		directionText.text = (CardDirectionIsRight ? "Right: " : "Left: ") + CardDirectionValue;
 
 
 		speedTextRenderer.sortingLayerName = "CardText";
@@ -87,8 +92,15 @@ public class Card : MonoBehaviour {
 	}
 
 	void UpdateCardPosition()
-	{				
-		if (cardGraphics.rotation.eulerAngles.y != targetRotation)
+	{
+
+        if (mouseDown)
+        {
+            targetPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition + new Vector3(0, 0, 10));
+        }
+        transform.position = Vector3.Lerp(transform.position, targetPosition, cardMovingSpeed);
+
+        if (cardGraphics.rotation.eulerAngles.y != targetRotation)
 		{
 			 Vector3 to = new Vector3(0, targetRotation, 0);
 	         if (Vector3.Distance(cardGraphics.eulerAngles, to) > 0.01f)
@@ -132,16 +144,21 @@ public class Card : MonoBehaviour {
 
 	void OnMouseEnter()
 	{
-		FlipCard();
+		//FlipCard();
 	}
 
 	void OnMouseExit()
 	{
-		FlipCard();
+		//FlipCard();
 	}
 
 	void OnMouseDown()
 	{
-		FlipCard();
+        mouseDown = true;
 	}
+
+    void OnMouseUp()
+    {
+        mouseDown = false;
+    }
 }
