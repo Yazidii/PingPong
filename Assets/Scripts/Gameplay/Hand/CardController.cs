@@ -81,9 +81,6 @@ public class CardController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
-        isActive = transform.position != initialPosition;
-        
         
 		//Call to rotate or move card
 		UpdateCardPosition();
@@ -160,18 +157,29 @@ public class CardController : MonoBehaviour {
 
 	void OnMouseEnter()
 	{
+        if (!GameController.cardIsActive)
+        {
+            isActive = true;
+            GameController.cardIsActive = true;
+        }
         mouseEntered = true;
         targetPosition = initialPosition + new Vector3(0, transform.localScale.y, 0);
 	}
 
 	void OnMouseExit()
 	{
+        if (!mouseDown && isActive)
+        {
+            isActive = false;
+            GameController.cardIsActive = false;
+        }
         mouseEntered = false;
         targetPosition = initialPosition;
 	}
 
     void PlayCard()
     {
+        GameController.cardIsActive = false;
         gameController.CardPlayedEvent(CardSpeed, CardDirectionIsRight ? CardDirectionValue : -CardDirectionValue);
         Destroy(this.gameObject);
     }

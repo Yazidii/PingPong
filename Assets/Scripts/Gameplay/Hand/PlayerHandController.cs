@@ -49,7 +49,7 @@ public class PlayerHandController : MonoBehaviour {
         int tempCount2 = 1;
         foreach (CardController card in cardsInHand)
         {
-            if (!card.mouseEntered)
+            if (!card.isActive)
             {
                 card.targetPosition = new Vector3((LeftSide.position.x + ((RightSide.position.x - LeftSide.position.x) / (cardsInHand.Count + 1)) * tempCount2), RightSide.position.y, RightSide.position.z);
                 card.initialPosition = card.targetPosition;
@@ -70,7 +70,7 @@ public class PlayerHandController : MonoBehaviour {
         int result = 0;
         foreach (CardController card in cardsInHand)
         {
-            if (card.mouseEntered)
+            if (card.isActive)
             {
                 result = card.CardDirectionIsRight ? card.CardDirectionValue : -card.CardDirectionValue;
             }

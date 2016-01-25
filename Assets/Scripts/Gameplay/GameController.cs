@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using System;
 
 public class GameController : MonoBehaviour {
 
@@ -9,8 +10,6 @@ public class GameController : MonoBehaviour {
 //	private int maxGameScore = 31;
 	private int currentPosition;
 	private int previousPosition;
-//	private int projectedPosition;
-//	private int resultingPosition;
 	private int deviation;
 
 	//Card Stats
@@ -31,6 +30,8 @@ public class GameController : MonoBehaviour {
 	private Transform topPoints;
 	private Transform bottomPoints;
 	private PlayerHandController playerHandController;
+
+    public static bool cardIsActive;
 
 	// Use this for initialization
 	void Start () {
@@ -125,19 +126,19 @@ public class GameController : MonoBehaviour {
 
 	Vector3 GetOrigin(int originNumber, bool topSide)
 	{
-		if (topSide)
-			return topPoints.Find(originNumber.ToString()).position;
-			else
-				return bottomPoints.Find(originNumber.ToString()).position;
+            if (topSide)
+                return topPoints.Find(originNumber.ToString()).position;
+            else
+                return bottomPoints.Find(originNumber.ToString()).position;
 	}
 
 	Vector3 GetDestination(int destinationNumber, bool topSide)
 	{
-		if (topSide)
+            if (topSide)
 			return bottomPoints.Find(destinationNumber.ToString()).position;
 			else
 				return topPoints.Find(destinationNumber.ToString()).position;
-	}
+    }
 
 	int GetDirection() {
 			return playerHandController.GetDirection();
