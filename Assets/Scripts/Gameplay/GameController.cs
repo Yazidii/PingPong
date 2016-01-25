@@ -48,6 +48,9 @@ public class GameController : MonoBehaviour {
 		unalteredLineRenderer = GameObject.Find("UnalteredLine").GetComponent<LineRenderer>();
 		projectedLineRenderer = GameObject.Find("ProjectedLine").GetComponent<LineRenderer>();
 
+        projectedLineRenderer.sortingLayerName = "ProjectedLine";
+
+
 		playerHandController = GameObject.Find("Hand").GetComponent<PlayerHandController>();
 
 		topPoints = GameObject.Find("Top").GetComponent<Transform>();

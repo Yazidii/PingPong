@@ -59,17 +59,23 @@ public class PlayerHandController : MonoBehaviour {
 
         }
 
-	public int GetDirection()
-	{/*
-		foreach (CardController card in cards)
-			if (card.hover)
-				return card.GetDirection();*/
-		return 0;
-	}
 
 	public void DrawCard()
 	{
 		Debug.Log("Drawing Card");
 	}
+
+    public int GetDirection()
+    {
+        int result = 0;
+        foreach (CardController card in cardsInHand)
+        {
+            if (card.mouseEntered)
+            {
+                result = card.CardDirectionIsRight ? card.CardDirectionValue : -card.CardDirectionValue;
+            }
+        }
+        return result;
+    }
 
 }

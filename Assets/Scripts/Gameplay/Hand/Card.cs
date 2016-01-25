@@ -40,8 +40,7 @@ public class Card : MonoBehaviour {
 
 	public bool hover = false;
 
-
-
+    
 
 	// Use this for initialization
 	void Start () {
@@ -66,6 +65,7 @@ public class Card : MonoBehaviour {
 		descriptionTextRenderer.sortingLayerName = "CardText";
 
 		cardFront = FrontGray;
+
 
 	}
 	

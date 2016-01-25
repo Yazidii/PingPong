@@ -48,11 +48,11 @@ public class CardController : MonoBehaviour {
     public PlayerHandController playerHandController;
     public Deck deckController;
 
+    GameController gameController;
 
 
-
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 		cardGraphics = transform.Find("Graphics");
 		cardSpriteObject = cardGraphics.Find("Sprite");
 
@@ -75,7 +75,9 @@ public class CardController : MonoBehaviour {
 		speedTextRenderer.sortingLayerName = "CardText";
 		directionTextRenderer.sortingLayerName = "CardText";
 		descriptionTextRenderer.sortingLayerName = "CardText";
-	}
+
+        gameController = GameObject.Find("GameController").GetComponent<GameController>();
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -170,6 +172,7 @@ public class CardController : MonoBehaviour {
 
     void PlayCard()
     {
+        gameController.CardPlayedEvent(CardSpeed, CardDirectionIsRight ? CardDirectionValue : -CardDirectionValue);
         Destroy(this.gameObject);
     }
 
