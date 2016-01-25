@@ -9,7 +9,6 @@ public class CardController : MonoBehaviour {
 	public Sprite Back;
 
 	private float targetRotation = 0;
-	private float startRotation;
 	private float rotationRate = 9;
 	public bool front = false;
 
@@ -180,6 +179,7 @@ public class CardController : MonoBehaviour {
     void PlayCard()
     {
         GameController.cardIsActive = false;
+        if (gameController != null)
         gameController.CardPlayedEvent(CardSpeed, CardDirectionIsRight ? CardDirectionValue : -CardDirectionValue);
         Destroy(this.gameObject);
     }

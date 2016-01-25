@@ -3,19 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class Deck : MonoBehaviour {
-
-	PlayerHandController handController;
+    
 	public List<CardController> cards = new List<CardController>();
-	int currentHandSize = 1;
 	public GameObject CardPrefab;
 	CardController lastAddedCard;
     PlayerHandController playerHand;
 
-    List<CardController> cardsInHand = new List<CardController>();
-
 	// Use this for initialization
 	void Start () {
-		handController = GameObject.Find("Hand").GetComponent<PlayerHandController>();
         playerHand = transform.GetComponentInParent<PlayerHandController>();
 	}
 	

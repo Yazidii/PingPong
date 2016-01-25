@@ -12,13 +12,6 @@ public class GameController : MonoBehaviour {
 	private int previousPosition;
 	private int deviation;
 
-	//Card Stats
-	private int cardSpeed;
-	private int cardDirection;
-
-	//UI
-	private Text speedScoreDisplay;
-
 	//Objects
 	private BallController ballController;
 	private LineRenderer moveLineRenderer;
