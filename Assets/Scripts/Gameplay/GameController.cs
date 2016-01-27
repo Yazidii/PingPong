@@ -9,7 +9,8 @@ TO DO
     Lots of refactoring
     Create static class with global variables
     Create end game
-
+    Render dotted and animated lines
+    Card movement turning animation
 
 */
 
@@ -39,11 +40,13 @@ public class GameController : MonoBehaviour {
     public static bool cardIsActive;
     public static bool playerTurn;
     public static bool applicationQuitting = false;
+    public static CardController activeCard;
 
     private AiHandController aiController;
 
 	// Use this for initialization
 	void Start () {
+        Application.targetFrameRate = 60;
 		isTopSide = false;
 		currentPosition = 0;
 		previousPosition = 0;
@@ -76,12 +79,20 @@ public class GameController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		//GL.Clear(true,true,Color.green,0.0f);
+        //GL.Clear(true,true,Color.green,0.0f);
 
-		
+        UpdateHelperLines();
+
 		UpdateDrawingCoordinates();
 	}
 
+    void UpdateHelperLines()
+    {
+        if (cardIsActive && activeCard != null)
+            projectedLineRenderer.enabled = activeCard.handController.PlayerHand && playerTurn;
+        else
+            projectedLineRenderer.enabled = false;
+    }
 
 	void UpdateDrawingCoordinates()
 	{	
@@ -91,12 +102,11 @@ public class GameController : MonoBehaviour {
 		origin = GetOrigin(previousPosition, !isTopSide);
 		if (currentPosition <= 4 && currentPosition >= -4)
 	    destination = GetDestination(currentPosition, !isTopSide);
-	    if (currentPosition + deviation <= 4 && currentPosition + deviation >= -4)
-        unaltered = GetOrigin(currentPosition + deviation, !isTopSide); //throws exception when outside of table
-        if (currentPosition + deviation + GetDirection() <= 4 && currentPosition + deviation + GetDirection() >= -4)
-        projection = GetOrigin(currentPosition + deviation + GetDirection(), !isTopSide); //throws exception when outside of table
         
-
+        unaltered = GetDestination(currentPosition + deviation, isTopSide); //throws exception when outside of table
+        
+        projection = GetDestination(currentPosition + deviation + GetDirection(), isTopSide); //throws exception when outside of table
+        
         moveLineRenderer.SetPosition(0, origin + new Vector3(0,0,-0.1f));
         moveLineRenderer.SetPosition(1, destination + new Vector3(0,0,-0.1f));
 
@@ -119,21 +129,23 @@ public class GameController : MonoBehaviour {
 		deviation = deviation + direction;
 		speedScore += speed;
 		currentPosition = previousPosition + deviation;
-		//projectedPosition = currentPosition + deviation;
-		
-		if (-4 <= currentPosition && currentPosition <= 4)
-			{
-				origin = GetOrigin(previousPosition, isTopSide);
-				destination = GetDestination(currentPosition, isTopSide);
+        //projectedPosition = currentPosition + deviation;
 
-				isTopSide = !isTopSide;
-				
-				ballController.MoveBall(origin, destination);
-			}
-			else 
-			Application.Quit();
+        if (-4 <= currentPosition && currentPosition <= 4)
+        {
+            origin = GetOrigin(previousPosition, isTopSide);
+            destination = GetDestination(currentPosition, isTopSide);
 
-		Debug.Log ("Current Position:" + currentPosition);
+            isTopSide = !isTopSide;
+
+            ballController.MoveBall(origin, destination);
+        }
+        else {
+            ExecuteGameOverEvent();
+            Debug.Log("Current Position:" + currentPosition);
+        }
+
+        playerTurn = !playerTurn;
 
         if (!playerTurn)
         {
@@ -152,10 +164,22 @@ public class GameController : MonoBehaviour {
 
 	Vector3 GetDestination(int destinationNumber, bool topSide)
 	{
-            if (topSide)
-			return bottomPoints.Find(destinationNumber.ToString()).position;
-			else
-				return topPoints.Find(destinationNumber.ToString()).position;
+        if (topSide)
+        {
+            if (destinationNumber > 4)
+                return new Vector3((bottomPoints.Find("4").position.x - bottomPoints.Find("3").position.x) * (destinationNumber - 4) + bottomPoints.Find("4").position.x, bottomPoints.Find("4").position.y, bottomPoints.Find("4").position.z);
+            if (destinationNumber < -4)
+                return new Vector3(bottomPoints.Find("-4").position.x - (bottomPoints.Find("-4").position.x - bottomPoints.Find("-3").position.x) * (destinationNumber + 4), bottomPoints.Find("-4").position.y, bottomPoints.Find("-4").position.z);
+            return bottomPoints.Find(destinationNumber.ToString()).position;
+        }
+        else
+        {
+            if (destinationNumber > 4)
+                return new Vector3((topPoints.Find("4").position.x - topPoints.Find("3").position.x) * (destinationNumber - 4) + topPoints.Find("4").position.x, topPoints.Find("4").position.y, topPoints.Find("4").position.z);
+            if (destinationNumber < -4)
+                return new Vector3(topPoints.Find("-4").position.x - (topPoints.Find("-4").position.x - topPoints.Find("-3").position.x) * (destinationNumber + 4), topPoints.Find("-4").position.y, topPoints.Find("-4").position.z);
+            return topPoints.Find(destinationNumber.ToString()).position;
+        }
     }
 
 	int GetDirection() {
@@ -165,5 +189,14 @@ public class GameController : MonoBehaviour {
     void OnApplicationQuit()
     {
         applicationQuitting = true;
+    }
+    
+    void ExecuteGameOverEvent()
+    {
+        if (playerTurn)
+            Debug.Log("Game Over, You Lose");
+        else
+            Debug.Log("Game Over, You Win");
+        Application.Quit();
     }
 }

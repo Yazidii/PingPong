@@ -10,11 +10,15 @@ public class PlayerHandController : MonoBehaviour, IHandController {
 
     Transform LeftSide;
     Transform RightSide;
-    public bool PlayerHand;
+    bool IHandController.PlayerHand
+    {
+        get { return _playerHand; }
+    }
     public GameObject CardPrefab;
 
     // Variable that controls whether player hand can be used
     public bool IsLocked;
+    bool _playerHand = true;
 
 	// Use this for initialization
 	void Start () {
@@ -57,15 +61,8 @@ public class PlayerHandController : MonoBehaviour, IHandController {
         var lastAddedCard = cardsInHand[cardsInHand.Count - 1];
         BuildCard(lastAddedCard);
 
-        if (PlayerHand && !lastAddedCard.front)
-        {
-            lastAddedCard.FlipCard();
-        }
+        lastAddedCard.FlipCard();
 
-        if (!PlayerHand)
-        {
-            lastAddedCard.transform.localScale = new Vector3(-1, -1, 1);
-        }
         UpdateCardPositions();
     }
 

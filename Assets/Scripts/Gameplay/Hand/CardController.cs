@@ -161,6 +161,7 @@ public class CardController : MonoBehaviour {
             if (GameController.playerTurn)
             {
                 isActive = true;
+                GameController.activeCard = this;
             }
             GameController.cardIsActive = true;
         }
@@ -182,7 +183,6 @@ public class CardController : MonoBehaviour {
     public void PlayCard()
     {
         GameController.cardIsActive = false;
-        GameController.playerTurn = !GameController.playerTurn;
         if (gameController != null)
             gameController.CardPlayedEvent(CardSpeed, CardDirectionIsRight ? CardDirectionValue : -CardDirectionValue);
         Destroy(this.gameObject);

@@ -11,9 +11,15 @@ public class AiHandController : MonoBehaviour, IHandController {
     Transform LeftSide;
     Transform RightSide;
     public GameObject CardPrefab;
+    bool IHandController.PlayerHand
+    {
+        get { return _playerHand; }
+    }
 
     // Variable that controls whether player hand can be used
     public bool IsLocked = true;
+
+    bool _playerHand = false;
 
     // Use this for initialization
     void Start()
@@ -88,7 +94,7 @@ public class AiHandController : MonoBehaviour, IHandController {
         int tempCount2 = 1;
         foreach (CardController card in cardsInHand)
         {
-            if (!card.isActive && card != null)
+            if (card != null)
             {
                 card.targetPosition = new Vector3((LeftSide.position.x + ((RightSide.position.x - LeftSide.position.x) / (cardsInHand.Count + 1)) * tempCount2), RightSide.position.y, RightSide.position.z);
                 card.initialPosition = card.targetPosition;
@@ -115,9 +121,10 @@ public class AiHandController : MonoBehaviour, IHandController {
             if (-4 <= result && result <= 4)
             {
                 card.PlayCard();
-                break;
+                return;
             }
         }
+        cardsInHand[0].PlayCard();
     }
 
     IEnumerator Think()
