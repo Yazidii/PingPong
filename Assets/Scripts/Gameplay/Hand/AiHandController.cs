@@ -21,17 +21,21 @@ public class AiHandController : MonoBehaviour, IHandController {
 
     bool _playerHand = false;
 
-    // Use this for initialization
-    void Start()
+    void Awake()
     {
-        //deckController = transform.Find("Deck").GetComponent<Deck>();
         LeftSide = transform.GetChild(1);
         RightSide = transform.GetChild(2);
         deckController = transform.GetChild(0).GetComponent<Deck>();
     }
 
-    // Update is called once per frame
-    void FixedUpdate()
+    // Use this for initialization
+    void Start()
+    {
+        //deckController = transform.Find("Deck").GetComponent<Deck>();
+
+    }
+
+    void Update()
     {
         if (Input.GetKeyDown(KeyCode.D))
         {
@@ -40,6 +44,11 @@ public class AiHandController : MonoBehaviour, IHandController {
                 DrawCard();
             }
         }
+    }
+
+    // Update is called once per frame
+    void FixedUpdate()
+    {
 
     }
 
@@ -72,8 +81,9 @@ public class AiHandController : MonoBehaviour, IHandController {
     {
         card.deckController = this.transform.GetComponent<Deck>();
         card.CardSpeed = cardsInHand.Count;
-        card.CardDirectionValue = cardsInHand.Count;
+        card.CardDirectionValue = cardsInHand.Count - 1;
         card.CardDirectionIsRight = cardsInHand.Count % 2 == 0 ? true : false;
+        card.CardDescriptionText = "Description Text \n Goes Here";
         card.targetPosition = transform.position;
         card.cardFront = ReturnCardFront(card.CardDirectionValue, card.CardDirectionIsRight, card);
         card.SetHandController(transform.GetComponent<AiHandController>());

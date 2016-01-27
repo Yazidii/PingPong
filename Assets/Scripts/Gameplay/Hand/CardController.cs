@@ -20,6 +20,7 @@ public class CardController : MonoBehaviour {
 
     public int CardSpeed;
 	public int CardDirectionValue;
+    public string CardDescriptionText;
 	public bool CardDirectionIsRight;
 
     public Vector3 targetPosition;
@@ -70,6 +71,7 @@ public class CardController : MonoBehaviour {
         else
             directionText.text = "None";
 
+        descriptionText.text = CardDescriptionText;
 
 		speedTextRenderer.sortingLayerName = "CardText";
 		directionTextRenderer.sortingLayerName = "CardText";
@@ -78,6 +80,14 @@ public class CardController : MonoBehaviour {
         gameController = GameObject.Find("GameController").GetComponent<GameController>();
     }
 	
+    void Update()
+    {
+        if (Input.GetKeyDown("space"))
+        {
+            FlipCard();
+        }
+    }
+
 	// Update is called once per frame
 	void FixedUpdate () {
         
@@ -86,11 +96,6 @@ public class CardController : MonoBehaviour {
 
 		//Call to update card graphics to what they should currently be
 		UpdateCardGraphics();
-
-		if (Input.GetKeyDown("space"))
-		{
-			FlipCard();
-		}
 	}
 
 	public void FlipCard()
@@ -158,15 +163,13 @@ public class CardController : MonoBehaviour {
 	{
         if (!GameController.cardIsActive)
         {
-            if (GameController.playerTurn)
-            {
-                isActive = true;
-                GameController.activeCard = this;
-            }
+            isActive = true;
+            GameController.activeCard = this;
             GameController.cardIsActive = true;
         }
         mouseEntered = true;
         targetPosition = initialPosition + new Vector3(0, transform.localScale.y, 0);
+        GameController.UpdateCardPreview();
 	}
 
 	void OnMouseExit()
@@ -178,10 +181,13 @@ public class CardController : MonoBehaviour {
         }
         mouseEntered = false;
         targetPosition = initialPosition;
-	}
+        GameController.UpdateCardPreview();
+    }
 
     public void PlayCard()
     {
+
+        GameController.UpdateCardPreview();
         GameController.cardIsActive = false;
         if (gameController != null)
             gameController.CardPlayedEvent(CardSpeed, CardDirectionIsRight ? CardDirectionValue : -CardDirectionValue);

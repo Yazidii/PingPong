@@ -35,6 +35,7 @@ public class GameController : MonoBehaviour {
 	private Transform topPoints;
 	private Transform bottomPoints;
 	private IHandController playerHandController;
+    private IHandController aiHandController;
 
     //Global
     public static bool cardIsActive;
@@ -43,6 +44,12 @@ public class GameController : MonoBehaviour {
     public static CardController activeCard;
 
     private AiHandController aiController;
+
+    private static GameObject cardPreview;
+
+    //Temp
+    private int cardsInPlayerHand;
+    private int cardsInEnemyHand;
 
 	// Use this for initialization
 	void Start () {
@@ -64,8 +71,9 @@ public class GameController : MonoBehaviour {
 
 
 		playerHandController = GameObject.Find("Hand").GetComponent<PlayerHandController>();
+        aiHandController = GameObject.Find("EnemyHand").GetComponent<AiHandController>();
 
-		topPoints = GameObject.Find("Top").GetComponent<Transform>();
+        topPoints = GameObject.Find("Top").GetComponent<Transform>();
 		bottomPoints = GameObject.Find("Bottom").GetComponent<Transform>();
 
 		//Temp
@@ -73,9 +81,18 @@ public class GameController : MonoBehaviour {
 
         aiController = GameObject.Find("EnemyHand").GetComponent<AiHandController>();
 
+        cardPreview = GameObject.Find("CardPreview");
+
         playerTurn = true;
+
+        DrawCards();
 	}
 	
+    void Update()
+    {
+
+    }
+
 	// Update is called once per frame
 	void FixedUpdate () {
         //GL.Clear(true,true,Color.green,0.0f);
@@ -87,7 +104,7 @@ public class GameController : MonoBehaviour {
 
     void UpdateHelperLines()
     {
-        if (cardIsActive && activeCard != null)
+        if (cardIsActive && activeCard != null && playerTurn)
             projectedLineRenderer.enabled = activeCard.handController.PlayerHand && playerTurn;
         else
             projectedLineRenderer.enabled = false;
@@ -197,5 +214,58 @@ public class GameController : MonoBehaviour {
         else
             Debug.Log("Game Over, You Win");
         Application.Quit();
+    }
+
+    public static void UpdateCardPreview()
+    {
+        if (cardIsActive && activeCard != null && activeCard.handController.PlayerHand)
+        {
+            cardPreview.transform.GetChild(3).GetComponent<SpriteRenderer>().enabled = true;
+            cardPreview.transform.GetChild(3).GetComponent<SpriteRenderer>().sprite = activeCard.cardSpriteRenderer.sprite;
+            cardPreview.transform.GetChild(3).GetComponent<SpriteRenderer>().sortingLayerName = "ActiveCard";
+
+            cardPreview.transform.GetChild(0).GetComponent<MeshRenderer>().sortingLayerName = "ActiveCardText";
+            cardPreview.transform.GetChild(0).GetComponent<TextMesh>().text = activeCard.CardDescriptionText;
+            cardPreview.transform.GetChild(0).GetComponent<MeshRenderer>().enabled = true;
+
+            cardPreview.transform.GetChild(1).GetComponent<MeshRenderer>().sortingLayerName = "ActiveCardText";
+            cardPreview.transform.GetChild(1).GetComponent<TextMesh>().text = activeCard.CardSpeed.ToString();
+            cardPreview.transform.GetChild(1).GetComponent<MeshRenderer>().enabled = true;
+
+            cardPreview.transform.GetChild(2).GetComponent<MeshRenderer>().sortingLayerName = "ActiveCardText";
+            cardPreview.transform.GetChild(2).GetComponent<TextMesh>().text = activeCard.CardDirectionValue > 0 ? ((activeCard.CardDirectionIsRight ? "Right: " : "Left: ") + activeCard.CardDirectionValue.ToString()) : "None";
+            cardPreview.transform.GetChild(2).GetComponent<MeshRenderer>().enabled = true;
+        }
+
+        if (!cardIsActive || activeCard == null)
+        {
+            cardPreview.transform.GetChild(3).GetComponent<SpriteRenderer>().enabled = false;
+            cardPreview.transform.GetChild(0).GetComponent<MeshRenderer>().enabled = false;
+            cardPreview.transform.GetChild(1).GetComponent<MeshRenderer>().enabled = false;
+            cardPreview.transform.GetChild(2).GetComponent<MeshRenderer>().enabled = false;
+        }
+    }
+
+    private void DrawCards()
+    {
+        if (cardsInPlayerHand < 5)
+        {
+            playerHandController.DrawCard();
+            cardsInPlayerHand++;
+            StartCoroutine(Wait());
+        }
+        else
+            if (cardsInEnemyHand < 5)
+        {
+            aiHandController.DrawCard();
+            cardsInEnemyHand++;
+            StartCoroutine(Wait());
+        }
+    }
+
+    IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(0.4f);
+        DrawCards();
     }
 }

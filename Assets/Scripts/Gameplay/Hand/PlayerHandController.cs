@@ -20,23 +20,33 @@ public class PlayerHandController : MonoBehaviour, IHandController {
     public bool IsLocked;
     bool _playerHand = true;
 
-	// Use this for initialization
-	void Start () {
-        //deckController = transform.Find("Deck").GetComponent<Deck>();
+    void Awake()
+    {
         LeftSide = transform.GetChild(1);
         RightSide = transform.GetChild(2);
         deckController = transform.GetChild(0).GetComponent<Deck>();
+    }
+
+	// Use this for initialization
+	void Start () {
+        //deckController = transform.Find("Deck").GetComponent<Deck>();
+
 	}
 	
-	// Update is called once per frame
-	void FixedUpdate () {
-		if (Input.GetKeyDown(KeyCode.D))
+    void Update ()
+    {
+        if (Input.GetKeyDown(KeyCode.D))
         {
             if (cardsInHand.Count < 5)
             {
                 DrawCard();
             }
         }
+    }
+
+	// Update is called once per frame
+	void FixedUpdate () {
+
 
         }
 
@@ -55,7 +65,9 @@ public class PlayerHandController : MonoBehaviour, IHandController {
 
     public void DrawCard()
     {
-        var newCard = (GameObject)Instantiate(CardPrefab, deckController.transform.position, deckController.transform.rotation);
+        var newCard = (GameObject)Instantiate(Resources.Load<GameObject>("Prefabs/Card"));
+        newCard.transform.position = deckController.transform.position;
+        newCard.transform.rotation = deckController.transform.rotation;
         cardsInHand.Add(newCard.GetComponent<CardController>());
 
         var lastAddedCard = cardsInHand[cardsInHand.Count - 1];
@@ -70,8 +82,9 @@ public class PlayerHandController : MonoBehaviour, IHandController {
     {
         card.deckController = this.transform.GetComponent<Deck>();
         card.CardSpeed = cardsInHand.Count;
-        card.CardDirectionValue = cardsInHand.Count;
+        card.CardDirectionValue = cardsInHand.Count - 1;
         card.CardDirectionIsRight = cardsInHand.Count % 2 == 0 ? true : false;
+        card.CardDescriptionText = "Description Text \n Goes Here";
         card.targetPosition = transform.position;
         card.cardFront = ReturnCardFront(card.CardDirectionValue, card.CardDirectionIsRight, card);
         card.SetHandController(transform.GetComponent<PlayerHandController>());
