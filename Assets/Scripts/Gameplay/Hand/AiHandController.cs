@@ -2,31 +2,32 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class PlayerHandController : MonoBehaviour, IHandController {
+public class AiHandController : MonoBehaviour, IHandController {
 
-	Deck deckController;
+    Deck deckController;
 
     public List<CardController> cardsInHand = new List<CardController>();
 
     Transform LeftSide;
     Transform RightSide;
-    public bool PlayerHand;
     public GameObject CardPrefab;
 
     // Variable that controls whether player hand can be used
-    public bool IsLocked;
+    public bool IsLocked = true;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start()
+    {
         //deckController = transform.Find("Deck").GetComponent<Deck>();
         LeftSide = transform.GetChild(1);
         RightSide = transform.GetChild(2);
         deckController = transform.GetChild(0).GetComponent<Deck>();
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		if (Input.GetKeyDown(KeyCode.D))
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.D))
         {
             if (cardsInHand.Count < 5)
             {
@@ -34,7 +35,7 @@ public class PlayerHandController : MonoBehaviour, IHandController {
             }
         }
 
-        }
+    }
 
     public int GetDirection()
     {
@@ -57,15 +58,7 @@ public class PlayerHandController : MonoBehaviour, IHandController {
         var lastAddedCard = cardsInHand[cardsInHand.Count - 1];
         BuildCard(lastAddedCard);
 
-        if (PlayerHand && !lastAddedCard.front)
-        {
-            lastAddedCard.FlipCard();
-        }
-
-        if (!PlayerHand)
-        {
-            lastAddedCard.transform.localScale = new Vector3(-1, -1, 1);
-        }
+        lastAddedCard.transform.localScale = new Vector3(-1, -1, 1);
         UpdateCardPositions();
     }
 
@@ -77,7 +70,7 @@ public class PlayerHandController : MonoBehaviour, IHandController {
         card.CardDirectionIsRight = cardsInHand.Count % 2 == 0 ? true : false;
         card.targetPosition = transform.position;
         card.cardFront = ReturnCardFront(card.CardDirectionValue, card.CardDirectionIsRight, card);
-        card.SetHandController(transform.GetComponent<PlayerHandController>());
+        card.SetHandController(transform.GetComponent<AiHandController>());
     }
 
     public Sprite ReturnCardFront(int value, bool right, CardController lastAddedCard)
@@ -95,7 +88,7 @@ public class PlayerHandController : MonoBehaviour, IHandController {
         int tempCount2 = 1;
         foreach (CardController card in cardsInHand)
         {
-            if (card != null)
+            if (!card.isActive && card != null)
             {
                 card.targetPosition = new Vector3((LeftSide.position.x + ((RightSide.position.x - LeftSide.position.x) / (cardsInHand.Count + 1)) * tempCount2), RightSide.position.y, RightSide.position.z);
                 card.initialPosition = card.targetPosition;
@@ -107,5 +100,29 @@ public class PlayerHandController : MonoBehaviour, IHandController {
     public void RemoveCard(CardController card)
     {
         cardsInHand.Remove(card);
+    }
+
+    public void PlayOpponentCard()
+    {
+        StartCoroutine(Think());
+    }
+
+    private void PlayCardResponse()
+    {
+        foreach (CardController card in cardsInHand)
+        {
+            int result = 2 * GameController.currentPosition - GameController.previousPosition + (card.CardDirectionIsRight ? card.CardDirectionValue : -card.CardDirectionValue);
+            if (-4 <= result && result <= 4)
+            {
+                card.PlayCard();
+                break;
+            }
+        }
+    }
+
+    IEnumerator Think()
+    {
+        yield return new WaitForSeconds(2);
+        PlayCardResponse();
     }
 }

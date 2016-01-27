@@ -44,7 +44,7 @@ public class CardController : MonoBehaviour {
 
     public Vector3 initialPosition;
 
-    public PlayerHandController playerHandController;
+    public IHandController handController;
     public Deck deckController;
 
     GameController gameController;
@@ -158,7 +158,10 @@ public class CardController : MonoBehaviour {
 	{
         if (!GameController.cardIsActive)
         {
-            isActive = true;
+            if (GameController.playerTurn)
+            {
+                isActive = true;
+            }
             GameController.cardIsActive = true;
         }
         mouseEntered = true;
@@ -176,16 +179,18 @@ public class CardController : MonoBehaviour {
         targetPosition = initialPosition;
 	}
 
-    void PlayCard()
+    public void PlayCard()
     {
         GameController.cardIsActive = false;
+        GameController.playerTurn = !GameController.playerTurn;
         if (gameController != null)
-        gameController.CardPlayedEvent(CardSpeed, CardDirectionIsRight ? CardDirectionValue : -CardDirectionValue);
+            gameController.CardPlayedEvent(CardSpeed, CardDirectionIsRight ? CardDirectionValue : -CardDirectionValue);
         Destroy(this.gameObject);
     }
 
 	void OnMouseDown()
 	{
+        if (GameController.playerTurn)
         mouseDown = true;
 	}
 
@@ -197,7 +202,6 @@ public class CardController : MonoBehaviour {
             targetPosition = initialPosition;
             if (transform.position.y > initialPosition.y + 8)
             {
-                Debug.Log("Playing Card");
                 PlayCard();
             }
         }
@@ -205,7 +209,15 @@ public class CardController : MonoBehaviour {
 
     void OnDestroy()
     {
-        playerHandController.cardsInHand.Remove(this.transform.GetComponent<CardController>());
-        deckController.cards.Remove(this.transform.GetComponent<CardController>());
+        if (!GameController.applicationQuitting)
+        {
+            handController.RemoveCard(transform.GetComponent<CardController>()); 
+            handController.UpdateCardPositions();
+        }
+    }
+
+    public void SetHandController(IHandController handController)
+    {
+        this.handController = handController;
     }
 }

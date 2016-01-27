@@ -3,14 +3,25 @@ using UnityEngine.UI;
 using System.Collections;
 using System;
 
+/*
+TO DO
+
+    Lots of refactoring
+    Create static class with global variables
+    Create end game
+
+
+*/
+
+
 public class GameController : MonoBehaviour {
 
 	private bool isTopSide; //false = top
 	private int speedScore;
 //	private int maxGameScore = 31;
-	private int currentPosition;
-	private int previousPosition;
-	private int deviation;
+	public static int currentPosition;
+	public static int previousPosition;
+	public static int deviation;
 
 	//Objects
 	private BallController ballController;
@@ -22,13 +33,18 @@ public class GameController : MonoBehaviour {
 	private Vector3 origin, destination, projection, unaltered;
 	private Transform topPoints;
 	private Transform bottomPoints;
-	private PlayerHandController playerHandController;
+	private IHandController playerHandController;
 
+    //Global
     public static bool cardIsActive;
+    public static bool playerTurn;
+    public static bool applicationQuitting = false;
+
+    private AiHandController aiController;
 
 	// Use this for initialization
 	void Start () {
-		isTopSide = true;
+		isTopSide = false;
 		currentPosition = 0;
 		previousPosition = 0;
 //		projectedPosition = 0;
@@ -52,6 +68,10 @@ public class GameController : MonoBehaviour {
 
 		//Temp
 		UpdateDrawingCoordinates();
+
+        aiController = GameObject.Find("EnemyHand").GetComponent<AiHandController>();
+
+        playerTurn = true;
 	}
 	
 	// Update is called once per frame
@@ -114,6 +134,11 @@ public class GameController : MonoBehaviour {
 			Application.Quit();
 
 		Debug.Log ("Current Position:" + currentPosition);
+
+        if (!playerTurn)
+        {
+            aiController.PlayOpponentCard();
+        }
 	}
 
 
@@ -136,4 +161,9 @@ public class GameController : MonoBehaviour {
 	int GetDirection() {
 			return playerHandController.GetDirection();
 	}
+
+    void OnApplicationQuit()
+    {
+        applicationQuitting = true;
+    }
 }

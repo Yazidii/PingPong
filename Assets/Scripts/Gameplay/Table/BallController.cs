@@ -7,7 +7,7 @@ public class BallController : MonoBehaviour {
 	float speed = 0.2f;
 	// Use this for initialization
 	void Start () {
-		targetPosition = GameObject.Find("Top/0").GetComponent<Transform>().position;
+		targetPosition = GameObject.Find("Bottom/0").GetComponent<Transform>().position;
 	}
 	
 	// Update is called once per frame
