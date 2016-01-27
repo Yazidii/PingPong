@@ -31,7 +31,7 @@ public class AiHandController : MonoBehaviour, IHandController {
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (Input.GetKeyDown(KeyCode.D))
         {

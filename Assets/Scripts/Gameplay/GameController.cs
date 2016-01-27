@@ -46,7 +46,6 @@ public class GameController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        Application.targetFrameRate = 60;
 		isTopSide = false;
 		currentPosition = 0;
 		previousPosition = 0;
@@ -78,7 +77,7 @@ public class GameController : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
         //GL.Clear(true,true,Color.green,0.0f);
 
         UpdateHelperLines();

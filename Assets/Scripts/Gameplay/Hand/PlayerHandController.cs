@@ -29,7 +29,7 @@ public class PlayerHandController : MonoBehaviour, IHandController {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 		if (Input.GetKeyDown(KeyCode.D))
         {
             if (cardsInHand.Count < 5)

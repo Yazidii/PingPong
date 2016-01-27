@@ -79,7 +79,7 @@ public class CardController : MonoBehaviour {
     }
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
         
 		//Call to rotate or move card
 		UpdateCardPosition();
