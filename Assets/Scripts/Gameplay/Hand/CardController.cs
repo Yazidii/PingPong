@@ -186,9 +186,8 @@ public class CardController : MonoBehaviour {
 
     public void PlayCard()
     {
-
-        GameController.UpdateCardPreview();
         GameController.cardIsActive = false;
+        GameController.UpdateCardPreview();
         if (gameController != null)
             gameController.CardPlayedEvent(CardSpeed, CardDirectionIsRight ? CardDirectionValue : -CardDirectionValue);
         Destroy(this.gameObject);
