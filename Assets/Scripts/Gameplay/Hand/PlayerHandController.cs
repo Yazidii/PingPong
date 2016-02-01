@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using Assets.Scripts.Engine;
 
 public class PlayerHandController : MonoBehaviour, IHandController {
 
@@ -81,7 +82,7 @@ public class PlayerHandController : MonoBehaviour, IHandController {
     void BuildCard(CardController card)
     {
         card.deckController = this.transform.GetComponent<Deck>();
-        card.CardSpeed = cardsInHand.Count;
+        card.CardSpeed = cardsInHand.Count + 2;
         card.CardDirectionValue = cardsInHand.Count - 1;
         card.CardDirectionIsRight = cardsInHand.Count % 2 == 0 ? true : false;
         card.CardDescriptionText = "Description Text \n Goes Here";

@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using Assets.Scripts.Engine;
 
 public class AiHandController : MonoBehaviour, IHandController {
 
@@ -67,7 +68,9 @@ public class AiHandController : MonoBehaviour, IHandController {
 
     public void DrawCard()
     {
-        var newCard = (GameObject)Instantiate(CardPrefab, deckController.transform.position, deckController.transform.rotation);
+        var newCard = (GameObject)Instantiate(Resources.Load<GameObject>("Prefabs/Card"));
+        newCard.transform.position = deckController.transform.position;
+        newCard.transform.rotation = deckController.transform.rotation;
         cardsInHand.Add(newCard.GetComponent<CardController>());
 
         var lastAddedCard = cardsInHand[cardsInHand.Count - 1];
@@ -127,7 +130,7 @@ public class AiHandController : MonoBehaviour, IHandController {
     {
         foreach (CardController card in cardsInHand)
         {
-            int result = 2 * GameController.currentPosition - GameController.previousPosition + (card.CardDirectionIsRight ? card.CardDirectionValue : -card.CardDirectionValue);
+            int result = 2 * GlobalVariables.currentPosition - GlobalVariables.previousPosition + (card.CardDirectionIsRight ? card.CardDirectionValue : -card.CardDirectionValue);
             if (-4 <= result && result <= 4)
             {
                 card.PlayCard();

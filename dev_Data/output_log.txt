@@ -1,0 +1,44 @@
+Mono path[0] = 'D:/Work/Unity 5/Projects/PingPong/PingPong/dev_Data/Managed'
+Mono path[1] = 'D:/Work/Unity 5/Projects/PingPong/PingPong/dev_Data/Mono'
+Mono config path = 'D:/Work/Unity 5/Projects/PingPong/PingPong/dev_Data/Mono/etc'
+PlayerConnection initialized from D:/Work/Unity 5/Projects/PingPong/PingPong/dev_Data (debug = 0)
+PlayerConnection initialized network socket : 0.0.0.0 55260
+Multi-casting "[IP] 192.168.0.104 [Port] 55260 [Flags] 2 [Guid] 176675510 [EditorId] 229606429 [Version] 1048832 [Id] WindowsPlayer(Yazidi-PC) [Debug] 0" to [225.0.0.222:54997]...
+PlayerConnection already initialized - listening to [192.168.0.104:55260]
+Initialize engine version: 5.3.1f1 (cc9cbbcc37b4)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 980 Ti (ID=0x17c8)
+    Vendor:   NVIDIA
+    VRAM:     3072 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: D:\Work\Unity 5\Projects\PingPong\PingPong\dev_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\Work\Unity 5\Projects\PingPong\PingPong\dev_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\Work\Unity 5\Projects\PingPong\PingPong\dev_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\Work\Unity 5\Projects\PingPong\PingPong\dev_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: D:\Work\Unity 5\Projects\PingPong\PingPong\dev_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading D:\Work\Unity 5\Projects\PingPong\PingPong\dev_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: D:\Work\Unity 5\Projects\PingPong\PingPong\dev_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading D:\Work\Unity 5\Projects\PingPong\PingPong\dev_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: D:\Work\Unity 5\Projects\PingPong\PingPong\dev_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading D:\Work\Unity 5\Projects\PingPong\PingPong\dev_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: D:\Work\Unity 5\Projects\PingPong\PingPong\dev_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading D:\Work\Unity 5\Projects\PingPong\PingPong\dev_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.081 seconds
+Platform assembly: D:\Work\Unity 5\Projects\PingPong\PingPong\dev_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: D:\Work\Unity 5\Projects\PingPong\PingPong\dev_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 3200x1080 at -1280,0
+<RI> Initializing input.
+<RI.Hid> Failed to create device file:
+ 2 The system cannot find the file specified.
+
+ 
+(Filename: C:/buildslave/unity/build/PlatformDependent/Win/RawInput.cpp Line: 54)
+
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 0.431776 ms
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 2894 -> priority: 1 
+  Thread -> id: 230 -> priority: 1 

@@ -2,6 +2,8 @@
 using UnityEngine.UI;
 using System.Collections;
 using System;
+using UnityEngine.SceneManagement;
+using Assets.Scripts.Engine;
 
 /*
 TO DO
@@ -11,24 +13,27 @@ TO DO
     Create end game
     Render dotted and animated lines
     Card movement turning animation
+    Static methods
+    Improve initialization
+    
+    Card persistence
 
+    On new round don't discard cards
 */
-
 
 public class GameController : MonoBehaviour {
 
 	private bool isTopSide; //false = top
-	private int speedScore;
+	private int speedScore = 0;
 //	private int maxGameScore = 31;
-	public static int currentPosition;
-	public static int previousPosition;
-	public static int deviation;
+
 
 	//Objects
 	private BallController ballController;
 	private LineRenderer moveLineRenderer;
 	private LineRenderer unalteredLineRenderer;
 	private LineRenderer projectedLineRenderer;
+    private TextMesh totalSpeedText;
 
 	//Temporary
 	private Vector3 origin, destination, projection, unaltered;
@@ -37,11 +42,7 @@ public class GameController : MonoBehaviour {
 	private IHandController playerHandController;
     private IHandController aiHandController;
 
-    //Global
-    public static bool cardIsActive;
-    public static bool playerTurn;
-    public static bool applicationQuitting = false;
-    public static CardController activeCard;
+
 
     private AiHandController aiController;
 
@@ -54,12 +55,12 @@ public class GameController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		isTopSide = false;
-		currentPosition = 0;
-		previousPosition = 0;
+		GlobalVariables.currentPosition = 0;
+		GlobalVariables.previousPosition = 0;
 //		projectedPosition = 0;
 //		resultingPosition = 0;
 		speedScore = 0;
-		deviation = 0;
+		GlobalVariables.deviation = 0;
 
 
 		ballController = GameObject.Find("Ball").GetComponent<BallController>();
@@ -76,6 +77,9 @@ public class GameController : MonoBehaviour {
         topPoints = GameObject.Find("Top").GetComponent<Transform>();
 		bottomPoints = GameObject.Find("Bottom").GetComponent<Transform>();
 
+        totalSpeedText = GameObject.Find("TotalSpeed").GetComponent<TextMesh>();
+        GameObject.Find("TotalSpeed").GetComponent<MeshRenderer>().sortingLayerName = "Background";
+
 		//Temp
 		UpdateDrawingCoordinates();
 
@@ -83,7 +87,7 @@ public class GameController : MonoBehaviour {
 
         cardPreview = GameObject.Find("CardPreview");
 
-        playerTurn = true;
+        GlobalVariables.playerTurn = true;
 
         DrawCards();
 	}
@@ -104,8 +108,8 @@ public class GameController : MonoBehaviour {
 
     void UpdateHelperLines()
     {
-        if (cardIsActive && activeCard != null && playerTurn)
-            projectedLineRenderer.enabled = activeCard.handController.PlayerHand && playerTurn;
+        if (GlobalVariables.cardIsActive && GlobalVariables.activeCard != null && GlobalVariables.playerTurn)
+            projectedLineRenderer.enabled = GlobalVariables.activeCard.handController.PlayerHand && GlobalVariables.playerTurn;
         else
             projectedLineRenderer.enabled = false;
     }
@@ -115,13 +119,13 @@ public class GameController : MonoBehaviour {
 		//Debug.Log(devClass.GetOrigin(previousPosition, !isTopSide));
 
 		//Move this to card played event
-		origin = GetOrigin(previousPosition, !isTopSide);
-		if (currentPosition <= 4 && currentPosition >= -4)
-	    destination = GetDestination(currentPosition, !isTopSide);
+		origin = GetOrigin(GlobalVariables.previousPosition, !isTopSide);
+		if (GlobalVariables.currentPosition <= 4 && GlobalVariables.currentPosition >= -4)
+	    destination = GetDestination(GlobalVariables.currentPosition, !isTopSide);
         
-        unaltered = GetDestination(currentPosition + deviation, isTopSide); //throws exception when outside of table
+        unaltered = GetDestination(GlobalVariables.currentPosition + GlobalVariables.deviation, isTopSide); //throws exception when outside of table
         
-        projection = GetDestination(currentPosition + deviation + GetDirection(), isTopSide); //throws exception when outside of table
+        projection = GetDestination(GlobalVariables.currentPosition + GlobalVariables.deviation + GetDirection(), isTopSide); //throws exception when outside of table
         
         moveLineRenderer.SetPosition(0, origin + new Vector3(0,0,-0.1f));
         moveLineRenderer.SetPosition(1, destination + new Vector3(0,0,-0.1f));
@@ -141,16 +145,17 @@ public class GameController : MonoBehaviour {
 
 	public void CardPlayedEvent(int speed, int direction)
 	{
-		previousPosition = currentPosition;
-		deviation = deviation + direction;
+        GlobalVariables.previousPosition = GlobalVariables.currentPosition;
+        GlobalVariables.deviation = GlobalVariables.deviation + direction;
 		speedScore += speed;
-		currentPosition = previousPosition + deviation;
+        totalSpeedText.text = speedScore + "/21";
+        GlobalVariables.currentPosition = GlobalVariables.previousPosition + GlobalVariables.deviation;
         //projectedPosition = currentPosition + deviation;
 
-        if (-4 <= currentPosition && currentPosition <= 4)
+        if (-4 <= GlobalVariables.currentPosition && GlobalVariables.currentPosition <= 4 && speedScore <= 21)
         {
-            origin = GetOrigin(previousPosition, isTopSide);
-            destination = GetDestination(currentPosition, isTopSide);
+            origin = GetOrigin(GlobalVariables.previousPosition, isTopSide);
+            destination = GetDestination(GlobalVariables.currentPosition, isTopSide);
 
             isTopSide = !isTopSide;
 
@@ -158,12 +163,12 @@ public class GameController : MonoBehaviour {
         }
         else {
             ExecuteGameOverEvent();
-            Debug.Log("Current Position:" + currentPosition);
+            Debug.Log("Current Position:" + GlobalVariables.currentPosition);
         }
 
-        playerTurn = !playerTurn;
+        GlobalVariables.playerTurn = !GlobalVariables.playerTurn;
 
-        if (!playerTurn)
+        if (!GlobalVariables.playerTurn)
         {
             aiController.PlayOpponentCard();
         }
@@ -204,40 +209,52 @@ public class GameController : MonoBehaviour {
 
     void OnApplicationQuit()
     {
-        applicationQuitting = true;
+        GlobalVariables.applicationQuitting = true;
     }
     
     void ExecuteGameOverEvent()
     {
-        if (playerTurn)
+
+        origin = GetOrigin(GlobalVariables.previousPosition, isTopSide);
+        destination = GetDestination(GlobalVariables.currentPosition, isTopSide);
+
+        isTopSide = !isTopSide;
+
+        ballController.MoveBall(origin, destination);
+
+        moveLineRenderer.enabled = false;
+        projectedLineRenderer.enabled = false;
+        unalteredLineRenderer.enabled = false;
+
+        if (GlobalVariables.playerTurn)
             Debug.Log("Game Over, You Lose");
         else
             Debug.Log("Game Over, You Win");
-        Application.Quit();
+        SceneManager.LoadScene("Dev");
     }
 
     public static void UpdateCardPreview()
     {
-        if (cardIsActive && activeCard != null && activeCard.handController.PlayerHand)
+        if (GlobalVariables.cardIsActive && GlobalVariables.activeCard != null && GlobalVariables.activeCard.handController.PlayerHand)
         {
             cardPreview.transform.GetChild(3).GetComponent<SpriteRenderer>().enabled = true;
-            cardPreview.transform.GetChild(3).GetComponent<SpriteRenderer>().sprite = activeCard.cardSpriteRenderer.sprite;
+            cardPreview.transform.GetChild(3).GetComponent<SpriteRenderer>().sprite = GlobalVariables.activeCard.cardSpriteRenderer.sprite;
             cardPreview.transform.GetChild(3).GetComponent<SpriteRenderer>().sortingLayerName = "ActiveCard";
 
             cardPreview.transform.GetChild(0).GetComponent<MeshRenderer>().sortingLayerName = "ActiveCardText";
-            cardPreview.transform.GetChild(0).GetComponent<TextMesh>().text = activeCard.CardDescriptionText;
+            cardPreview.transform.GetChild(0).GetComponent<TextMesh>().text = GlobalVariables.activeCard.CardDescriptionText;
             cardPreview.transform.GetChild(0).GetComponent<MeshRenderer>().enabled = true;
 
             cardPreview.transform.GetChild(1).GetComponent<MeshRenderer>().sortingLayerName = "ActiveCardText";
-            cardPreview.transform.GetChild(1).GetComponent<TextMesh>().text = activeCard.CardSpeed.ToString();
+            cardPreview.transform.GetChild(1).GetComponent<TextMesh>().text = GlobalVariables.activeCard.CardSpeed.ToString();
             cardPreview.transform.GetChild(1).GetComponent<MeshRenderer>().enabled = true;
 
             cardPreview.transform.GetChild(2).GetComponent<MeshRenderer>().sortingLayerName = "ActiveCardText";
-            cardPreview.transform.GetChild(2).GetComponent<TextMesh>().text = activeCard.CardDirectionValue > 0 ? ((activeCard.CardDirectionIsRight ? "Right: " : "Left: ") + activeCard.CardDirectionValue.ToString()) : "None";
+            cardPreview.transform.GetChild(2).GetComponent<TextMesh>().text = GlobalVariables.activeCard.CardDirectionValue > 0 ? ((GlobalVariables.activeCard.CardDirectionIsRight ? "Right: " : "Left: ") + GlobalVariables.activeCard.CardDirectionValue.ToString()) : "None";
             cardPreview.transform.GetChild(2).GetComponent<MeshRenderer>().enabled = true;
         }
 
-        if (!cardIsActive || activeCard == null)
+        if (!GlobalVariables.cardIsActive || GlobalVariables.activeCard == null)
         {
             cardPreview.transform.GetChild(3).GetComponent<SpriteRenderer>().enabled = false;
             cardPreview.transform.GetChild(0).GetComponent<MeshRenderer>().enabled = false;

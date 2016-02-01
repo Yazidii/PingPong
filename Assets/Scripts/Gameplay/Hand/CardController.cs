@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
+using Assets.Scripts.Engine;
 
 public class CardController : MonoBehaviour {
 
@@ -161,11 +163,11 @@ public class CardController : MonoBehaviour {
 
 	void OnMouseEnter()
 	{
-        if (!GameController.cardIsActive)
+        if (!GlobalVariables.cardIsActive)
         {
             isActive = true;
-            GameController.activeCard = this;
-            GameController.cardIsActive = true;
+            GlobalVariables.activeCard = this;
+            GlobalVariables.cardIsActive = true;
         }
         mouseEntered = true;
         targetPosition = initialPosition + new Vector3(0, transform.localScale.y, 0);
@@ -177,7 +179,7 @@ public class CardController : MonoBehaviour {
         if (!mouseDown && isActive)
         {
             isActive = false;
-            GameController.cardIsActive = false;
+            GlobalVariables.cardIsActive = false;
         }
         mouseEntered = false;
         targetPosition = initialPosition;
@@ -186,7 +188,7 @@ public class CardController : MonoBehaviour {
 
     public void PlayCard()
     {
-        GameController.cardIsActive = false;
+        GlobalVariables.cardIsActive = false;
         GameController.UpdateCardPreview();
         if (gameController != null)
             gameController.CardPlayedEvent(CardSpeed, CardDirectionIsRight ? CardDirectionValue : -CardDirectionValue);
@@ -195,7 +197,7 @@ public class CardController : MonoBehaviour {
 
 	void OnMouseDown()
 	{
-        if (GameController.playerTurn)
+        if (GlobalVariables.playerTurn)
         mouseDown = true;
 	}
 
@@ -214,7 +216,7 @@ public class CardController : MonoBehaviour {
 
     void OnDestroy()
     {
-        if (!GameController.applicationQuitting)
+        if (!GlobalVariables.applicationQuitting)
         {
             handController.RemoveCard(transform.GetComponent<CardController>()); 
             handController.UpdateCardPositions();
