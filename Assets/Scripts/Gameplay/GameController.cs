@@ -9,7 +9,6 @@ using Assets.Scripts.Engine;
 TO DO
 
     Lots of refactoring
-    Create static class with global variables
     Create end game
     Render dotted and animated lines
     Card movement turning animation
@@ -17,13 +16,16 @@ TO DO
     Improve initialization
     
     Card persistence
+    Rounds
 
     On new round don't discard cards
 */
 
 public class GameController : MonoBehaviour {
 
-	private bool isTopSide; //false = top
+    #region Properties
+
+    private bool isTopSide; //false = top
 	private int speedScore = 0;
 //	private int maxGameScore = 31;
 
@@ -52,36 +54,41 @@ public class GameController : MonoBehaviour {
     private int cardsInPlayerHand;
     private int cardsInEnemyHand;
 
-	// Use this for initialization
-	void Start () {
-		isTopSide = false;
-		GlobalVariables.currentPosition = 0;
-		GlobalVariables.previousPosition = 0;
-//		projectedPosition = 0;
-//		resultingPosition = 0;
-		speedScore = 0;
-		GlobalVariables.deviation = 0;
+    #endregion Properties
+
+    #region Initialization
+
+    // Use this for initialization
+    void Start()
+    {
+        isTopSide = false;
+        GlobalVariables.currentPosition = 0;
+        GlobalVariables.previousPosition = 0;
+        //		projectedPosition = 0;
+        //		resultingPosition = 0;
+        speedScore = 0;
+        GlobalVariables.deviation = 0;
 
 
-		ballController = GameObject.Find("Ball").GetComponent<BallController>();
-		moveLineRenderer = GameObject.Find("MoveLine").GetComponent<LineRenderer>();
-		unalteredLineRenderer = GameObject.Find("UnalteredLine").GetComponent<LineRenderer>();
-		projectedLineRenderer = GameObject.Find("ProjectedLine").GetComponent<LineRenderer>();
+        ballController = GameObject.Find("Ball").GetComponent<BallController>();
+        moveLineRenderer = GameObject.Find("MoveLine").GetComponent<LineRenderer>();
+        unalteredLineRenderer = GameObject.Find("UnalteredLine").GetComponent<LineRenderer>();
+        projectedLineRenderer = GameObject.Find("ProjectedLine").GetComponent<LineRenderer>();
 
         projectedLineRenderer.sortingLayerName = "ProjectedLine";
 
 
-		playerHandController = GameObject.Find("Hand").GetComponent<PlayerHandController>();
+        playerHandController = GameObject.Find("Hand").GetComponent<PlayerHandController>();
         aiHandController = GameObject.Find("EnemyHand").GetComponent<AiHandController>();
 
         topPoints = GameObject.Find("Top").GetComponent<Transform>();
-		bottomPoints = GameObject.Find("Bottom").GetComponent<Transform>();
+        bottomPoints = GameObject.Find("Bottom").GetComponent<Transform>();
 
         totalSpeedText = GameObject.Find("TotalSpeed").GetComponent<TextMesh>();
         GameObject.Find("TotalSpeed").GetComponent<MeshRenderer>().sortingLayerName = "Background";
 
-		//Temp
-		UpdateDrawingCoordinates();
+        //Temp
+        UpdateDrawingCoordinates();
 
         aiController = GameObject.Find("EnemyHand").GetComponent<AiHandController>();
 
@@ -90,64 +97,17 @@ public class GameController : MonoBehaviour {
         GlobalVariables.playerTurn = true;
 
         DrawCards();
-	}
-	
-    void Update()
-    {
-
     }
 
-	// Update is called once per frame
-	void FixedUpdate () {
-        //GL.Clear(true,true,Color.green,0.0f);
+    #endregion Initialization
 
-        UpdateHelperLines();
+    #region Events
 
-		UpdateDrawingCoordinates();
-	}
-
-    void UpdateHelperLines()
+    public void CardPlayedEvent(int speed, int direction)
     {
-        if (GlobalVariables.cardIsActive && GlobalVariables.activeCard != null && GlobalVariables.playerTurn)
-            projectedLineRenderer.enabled = GlobalVariables.activeCard.handController.PlayerHand && GlobalVariables.playerTurn;
-        else
-            projectedLineRenderer.enabled = false;
-    }
-
-	void UpdateDrawingCoordinates()
-	{	
-		//Debug.Log(devClass.GetOrigin(previousPosition, !isTopSide));
-
-		//Move this to card played event
-		origin = GetOrigin(GlobalVariables.previousPosition, !isTopSide);
-		if (GlobalVariables.currentPosition <= 4 && GlobalVariables.currentPosition >= -4)
-	    destination = GetDestination(GlobalVariables.currentPosition, !isTopSide);
-        
-        unaltered = GetDestination(GlobalVariables.currentPosition + GlobalVariables.deviation, isTopSide); //throws exception when outside of table
-        
-        projection = GetDestination(GlobalVariables.currentPosition + GlobalVariables.deviation + GetDirection(), isTopSide); //throws exception when outside of table
-        
-        moveLineRenderer.SetPosition(0, origin + new Vector3(0,0,-0.1f));
-        moveLineRenderer.SetPosition(1, destination + new Vector3(0,0,-0.1f));
-
-        unalteredLineRenderer.SetPosition(0, destination + new Vector3(0,0,-0.1f));
-        unalteredLineRenderer.SetPosition(1, unaltered + new Vector3(0,0,-0.1f));
-
-        projectedLineRenderer.SetPosition(0, destination + new Vector3(0,0,-0.1f));
-        projectedLineRenderer.SetPosition(1, projection + new Vector3(0,0,-0.1f));
-
-        //Debug.Log(origin);
-        //Debug.Log(destination);
-        //Debug.Log(unaltered);
-        //Debug.Log(projection);
-
-	}
-
-	public void CardPlayedEvent(int speed, int direction)
-	{
         GlobalVariables.previousPosition = GlobalVariables.currentPosition;
         GlobalVariables.deviation = GlobalVariables.deviation + direction;
-		speedScore += speed;
+        speedScore += speed;
         totalSpeedText.text = speedScore + "/21";
         GlobalVariables.currentPosition = GlobalVariables.previousPosition + GlobalVariables.deviation;
         //projectedPosition = currentPosition + deviation;
@@ -172,46 +132,8 @@ public class GameController : MonoBehaviour {
         {
             aiController.PlayOpponentCard();
         }
-	}
-
-
-	Vector3 GetOrigin(int originNumber, bool topSide)
-	{
-            if (topSide)
-                return topPoints.Find(originNumber.ToString()).position;
-            else
-                return bottomPoints.Find(originNumber.ToString()).position;
-	}
-
-	Vector3 GetDestination(int destinationNumber, bool topSide)
-	{
-        if (topSide)
-        {
-            if (destinationNumber > 4)
-                return new Vector3((bottomPoints.Find("4").position.x - bottomPoints.Find("3").position.x) * (destinationNumber - 4) + bottomPoints.Find("4").position.x, bottomPoints.Find("4").position.y, bottomPoints.Find("4").position.z);
-            if (destinationNumber < -4)
-                return new Vector3(bottomPoints.Find("-4").position.x - (bottomPoints.Find("-4").position.x - bottomPoints.Find("-3").position.x) * (destinationNumber + 4), bottomPoints.Find("-4").position.y, bottomPoints.Find("-4").position.z);
-            return bottomPoints.Find(destinationNumber.ToString()).position;
-        }
-        else
-        {
-            if (destinationNumber > 4)
-                return new Vector3((topPoints.Find("4").position.x - topPoints.Find("3").position.x) * (destinationNumber - 4) + topPoints.Find("4").position.x, topPoints.Find("4").position.y, topPoints.Find("4").position.z);
-            if (destinationNumber < -4)
-                return new Vector3(topPoints.Find("-4").position.x - (topPoints.Find("-4").position.x - topPoints.Find("-3").position.x) * (destinationNumber + 4), topPoints.Find("-4").position.y, topPoints.Find("-4").position.z);
-            return topPoints.Find(destinationNumber.ToString()).position;
-        }
     }
 
-	int GetDirection() {
-			return playerHandController.GetDirection();
-	}
-
-    void OnApplicationQuit()
-    {
-        GlobalVariables.applicationQuitting = true;
-    }
-    
     void ExecuteGameOverEvent()
     {
 
@@ -231,6 +153,47 @@ public class GameController : MonoBehaviour {
         else
             Debug.Log("Game Over, You Win");
         SceneManager.LoadScene("Dev");
+    }
+
+    private void DrawCards()
+    {
+        if (cardsInPlayerHand < 5)
+        {
+            playerHandController.DrawCard();
+            cardsInPlayerHand++;
+            StartCoroutine(Wait());
+        }
+        else
+            if (cardsInEnemyHand < 5)
+        {
+            aiHandController.DrawCard();
+            cardsInEnemyHand++;
+            StartCoroutine(Wait());
+        }
+    }
+
+    void OnApplicationQuit()
+    {
+        GlobalVariables.applicationQuitting = true;
+    }
+
+    #endregion Events
+
+    #region Update Methods
+
+    void Update()
+    {
+
+    }
+
+    // Update is called once per frame
+    void FixedUpdate()
+    {
+        //GL.Clear(true,true,Color.green,0.0f);
+
+        UpdateHelperLines();
+
+        UpdateDrawingCoordinates();
     }
 
     public static void UpdateCardPreview()
@@ -263,26 +226,89 @@ public class GameController : MonoBehaviour {
         }
     }
 
-    private void DrawCards()
+    void UpdateHelperLines()
     {
-        if (cardsInPlayerHand < 5)
+        if (GlobalVariables.cardIsActive && GlobalVariables.activeCard != null && GlobalVariables.playerTurn)
+            projectedLineRenderer.enabled = GlobalVariables.activeCard.handController.PlayerHand && GlobalVariables.playerTurn;
+        else
+            projectedLineRenderer.enabled = false;
+    }
+
+    void UpdateDrawingCoordinates()
+    {
+        //Debug.Log(devClass.GetOrigin(previousPosition, !isTopSide));
+
+        //Move this to card played event
+        origin = GetOrigin(GlobalVariables.previousPosition, !isTopSide);
+        if (GlobalVariables.currentPosition <= 4 && GlobalVariables.currentPosition >= -4)
+            destination = GetDestination(GlobalVariables.currentPosition, !isTopSide);
+
+        unaltered = GetDestination(GlobalVariables.currentPosition + GlobalVariables.deviation, isTopSide); //throws exception when outside of table
+
+        projection = GetDestination(GlobalVariables.currentPosition + GlobalVariables.deviation + GetDirection(), isTopSide); //throws exception when outside of table
+
+        moveLineRenderer.SetPosition(0, origin + new Vector3(0, 0, -0.1f));
+        moveLineRenderer.SetPosition(1, destination + new Vector3(0, 0, -0.1f));
+
+        unalteredLineRenderer.SetPosition(0, destination + new Vector3(0, 0, -0.1f));
+        unalteredLineRenderer.SetPosition(1, unaltered + new Vector3(0, 0, -0.1f));
+
+        projectedLineRenderer.SetPosition(0, destination + new Vector3(0, 0, -0.1f));
+        projectedLineRenderer.SetPosition(1, projection + new Vector3(0, 0, -0.1f));
+
+        //Debug.Log(origin);
+        //Debug.Log(destination);
+        //Debug.Log(unaltered);
+        //Debug.Log(projection);
+
+    }
+
+    #endregion Update Methods
+
+    #region Helper Methods
+
+    Vector3 GetOrigin(int originNumber, bool topSide)
+    {
+        if (topSide)
+            return topPoints.Find(originNumber.ToString()).position;
+        else
+            return bottomPoints.Find(originNumber.ToString()).position;
+    }
+
+    Vector3 GetDestination(int destinationNumber, bool topSide)
+    {
+        if (topSide)
         {
-            playerHandController.DrawCard();
-            cardsInPlayerHand++;
-            StartCoroutine(Wait());
+            if (destinationNumber > 4)
+                return new Vector3((bottomPoints.Find("4").position.x - bottomPoints.Find("3").position.x) * (destinationNumber - 4) + bottomPoints.Find("4").position.x, bottomPoints.Find("4").position.y, bottomPoints.Find("4").position.z);
+            if (destinationNumber < -4)
+                return new Vector3(bottomPoints.Find("-4").position.x - (bottomPoints.Find("-4").position.x - bottomPoints.Find("-3").position.x) * (destinationNumber + 4), bottomPoints.Find("-4").position.y, bottomPoints.Find("-4").position.z);
+            return bottomPoints.Find(destinationNumber.ToString()).position;
         }
         else
-            if (cardsInEnemyHand < 5)
         {
-            aiHandController.DrawCard();
-            cardsInEnemyHand++;
-            StartCoroutine(Wait());
+            if (destinationNumber > 4)
+                return new Vector3((topPoints.Find("4").position.x - topPoints.Find("3").position.x) * (destinationNumber - 4) + topPoints.Find("4").position.x, topPoints.Find("4").position.y, topPoints.Find("4").position.z);
+            if (destinationNumber < -4)
+                return new Vector3(topPoints.Find("-4").position.x - (topPoints.Find("-4").position.x - topPoints.Find("-3").position.x) * (destinationNumber + 4), topPoints.Find("-4").position.y, topPoints.Find("-4").position.z);
+            return topPoints.Find(destinationNumber.ToString()).position;
         }
     }
+
+    int GetDirection()
+    {
+        return playerHandController.GetDirection();
+    }
+
+    #endregion Helper Methods
+
+    #region Coroutines
 
     IEnumerator Wait()
     {
         yield return new WaitForSeconds(0.4f);
         DrawCards();
     }
+
+    #endregion Coroutines
 }

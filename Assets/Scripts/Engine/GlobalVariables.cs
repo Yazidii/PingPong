@@ -7,6 +7,7 @@ namespace Assets.Scripts.Engine
 {
     public static class GlobalVariables
     {
+
         public static int currentPosition;
         public static int previousPosition;
         public static int deviation;
@@ -17,6 +18,9 @@ namespace Assets.Scripts.Engine
         public static bool applicationQuitting = false;
         public static CardController activeCard;
 
+        //Game
+        public static int playerScore;
+        public static int enemyScore;
 
     }
 }

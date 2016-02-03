@@ -76,7 +76,7 @@ public class AiHandController : MonoBehaviour, IHandController {
         var lastAddedCard = cardsInHand[cardsInHand.Count - 1];
         BuildCard(lastAddedCard);
 
-        lastAddedCard.transform.localScale = new Vector3(-1, -1, 1);
+        lastAddedCard.transform.localScale = lastAddedCard.transform.localScale.x * new Vector3(-1, -1, 1);
         UpdateCardPositions();
     }
 
