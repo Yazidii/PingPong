@@ -95,7 +95,6 @@ public class GameController : MonoBehaviour {
         speedScore += speed;
         totalSpeedText.text = speedScore + "/21";
         GlobalVariables.currentPosition = GlobalVariables.previousPosition + GlobalVariables.deviation;
-        //projectedPosition = currentPosition + deviation;
 
         if (-4 <= GlobalVariables.currentPosition && GlobalVariables.currentPosition <= 4 && speedScore <= 21)
         {
