@@ -106,7 +106,7 @@ public class PlayerHandController : MonoBehaviour, IHandController {
         int tempCount2 = 1;
         foreach (CardController card in cardsInHand)
         {
-            if (card != null)
+            if (card != null && LeftSide != null && RightSide != null)
             {
                 card.targetPosition = new Vector3((LeftSide.position.x + ((RightSide.position.x - LeftSide.position.x) / (cardsInHand.Count + 1)) * tempCount2), RightSide.position.y, RightSide.position.z);
                 card.initialPosition = card.targetPosition;

@@ -11,7 +11,7 @@ public class CardController : MonoBehaviour {
 	public Sprite Back;
 
 	private float targetRotation = 0;
-	private float rotationRate = 9;
+	private float rotationRate = 7;
 	public bool front = false;
 
     public bool mouseDown = false;
@@ -26,7 +26,7 @@ public class CardController : MonoBehaviour {
 	public bool CardDirectionIsRight;
 
     public Vector3 targetPosition;
-    float cardMovingSpeed = 0.2f;
+    float cardMovingSpeed = 0.15f;
 
     public SpriteRenderer cardSpriteRenderer;
 

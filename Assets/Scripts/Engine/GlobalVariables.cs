@@ -8,11 +8,11 @@ namespace Assets.Scripts.Engine
     public static class GlobalVariables
     {
 
+        //Global gameplay
         public static int currentPosition;
         public static int previousPosition;
         public static int deviation;
 
-        //Global
         public static bool cardIsActive;
         public static bool playerTurn;
         public static bool applicationQuitting = false;

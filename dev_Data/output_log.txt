@@ -1,11 +1,11 @@
-Mono path[0] = 'D:/Work/Unity 5/Projects/PingPong/PingPong/dev_Data/Managed'
-Mono path[1] = 'D:/Work/Unity 5/Projects/PingPong/PingPong/dev_Data/Mono'
-Mono config path = 'D:/Work/Unity 5/Projects/PingPong/PingPong/dev_Data/Mono/etc'
-PlayerConnection initialized from D:/Work/Unity 5/Projects/PingPong/PingPong/dev_Data (debug = 0)
-PlayerConnection initialized network socket : 0.0.0.0 55260
-Multi-casting "[IP] 192.168.0.104 [Port] 55260 [Flags] 2 [Guid] 176675510 [EditorId] 229606429 [Version] 1048832 [Id] WindowsPlayer(Yazidi-PC) [Debug] 0" to [225.0.0.222:54997]...
-PlayerConnection already initialized - listening to [192.168.0.104:55260]
-Initialize engine version: 5.3.1f1 (cc9cbbcc37b4)
+Mono path[0] = 'D:/Workspace/Projects/Unity/PingPong/PingPong/dev_Data/Managed'
+Mono path[1] = 'D:/Workspace/Projects/Unity/PingPong/PingPong/dev_Data/Mono'
+Mono config path = 'D:/Workspace/Projects/Unity/PingPong/PingPong/dev_Data/Mono/etc'
+PlayerConnection initialized from D:/Workspace/Projects/Unity/PingPong/PingPong/dev_Data (debug = 0)
+PlayerConnection initialized network socket : 0.0.0.0 55110
+Multi-casting "[IP] 192.168.0.104 [Port] 55110 [Flags] 2 [Guid] 1308169628 [EditorId] 3330967560 [Version] 1048832 [Id] WindowsPlayer(Yazidi-PC) [Debug] 0" to [225.0.0.222:54997]...
+PlayerConnection already initialized - listening to [192.168.0.104:55110]
+Initialize engine version: 5.3.4f1 (fdbb5133b820)
 GfxDevice: creating device client; threaded=1
 Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
@@ -13,32 +13,164 @@ Direct3D:
     Vendor:   NVIDIA
     VRAM:     3072 MB
 Begin MonoManager ReloadAssembly
-Platform assembly: D:\Work\Unity 5\Projects\PingPong\PingPong\dev_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading D:\Work\Unity 5\Projects\PingPong\PingPong\dev_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: D:\Work\Unity 5\Projects\PingPong\PingPong\dev_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading D:\Work\Unity 5\Projects\PingPong\PingPong\dev_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: D:\Work\Unity 5\Projects\PingPong\PingPong\dev_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading D:\Work\Unity 5\Projects\PingPong\PingPong\dev_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: D:\Work\Unity 5\Projects\PingPong\PingPong\dev_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading D:\Work\Unity 5\Projects\PingPong\PingPong\dev_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: D:\Work\Unity 5\Projects\PingPong\PingPong\dev_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading D:\Work\Unity 5\Projects\PingPong\PingPong\dev_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: D:\Work\Unity 5\Projects\PingPong\PingPong\dev_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading D:\Work\Unity 5\Projects\PingPong\PingPong\dev_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-- Completed reload, in  0.081 seconds
-Platform assembly: D:\Work\Unity 5\Projects\PingPong\PingPong\dev_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: D:\Work\Unity 5\Projects\PingPong\PingPong\dev_Data\Managed\System.dll (this message is harmless)
-desktop: 1920x1080 60Hz; virtual: 3200x1080 at -1280,0
+Platform assembly: D:\Workspace\Projects\Unity\PingPong\PingPong\dev_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\Workspace\Projects\Unity\PingPong\PingPong\dev_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\Workspace\Projects\Unity\PingPong\PingPong\dev_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\Workspace\Projects\Unity\PingPong\PingPong\dev_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: D:\Workspace\Projects\Unity\PingPong\PingPong\dev_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading D:\Workspace\Projects\Unity\PingPong\PingPong\dev_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: D:\Workspace\Projects\Unity\PingPong\PingPong\dev_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading D:\Workspace\Projects\Unity\PingPong\PingPong\dev_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: D:\Workspace\Projects\Unity\PingPong\PingPong\dev_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading D:\Workspace\Projects\Unity\PingPong\PingPong\dev_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: D:\Workspace\Projects\Unity\PingPong\PingPong\dev_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading D:\Workspace\Projects\Unity\PingPong\PingPong\dev_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.078 seconds
+Platform assembly: D:\Workspace\Projects\Unity\PingPong\PingPong\dev_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: D:\Workspace\Projects\Unity\PingPong\PingPong\dev_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 3840x1080 at 0,0
 <RI> Initializing input.
-<RI.Hid> Failed to create device file:
- 2 The system cannot find the file specified.
-
- 
-(Filename: C:/buildslave/unity/build/PlatformDependent/Win/RawInput.cpp Line: 54)
-
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 0.431776 ms
+UnloadTime: 0.405971 ms
+Game Over, You Win
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+GameController:ExecuteGameOverEvent() (at D:\Workspace\Projects\Unity\PingPong\PingPong\Assets\Scripts\Gameplay\GameController.cs:139)
+GameController:CardPlayedEvent(Int32, Int32) (at D:\Workspace\Projects\Unity\PingPong\PingPong\Assets\Scripts\Gameplay\GameController.cs:110)
+CardController:PlayCard() (at D:\Workspace\Projects\Unity\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\CardController.cs:194)
+AiHandController:PlayCardResponse() (at D:\Workspace\Projects\Unity\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\AiHandController.cs:136)
+<Think>c__Iterator1:MoveNext() (at D:\Workspace\Projects\Unity\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\AiHandController.cs:146)
+ 
+(Filename: D:/Workspace/Projects/Unity/PingPong/PingPong/Assets/Scripts/Gameplay/GameController.cs Line: 139)
+
+Current Position:-3
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+GameController:CardPlayedEvent(Int32, Int32) (at D:\Workspace\Projects\Unity\PingPong\PingPong\Assets\Scripts\Gameplay\GameController.cs:111)
+CardController:PlayCard() (at D:\Workspace\Projects\Unity\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\CardController.cs:194)
+AiHandController:PlayCardResponse() (at D:\Workspace\Projects\Unity\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\AiHandController.cs:136)
+<Think>c__Iterator1:MoveNext() (at D:\Workspace\Projects\Unity\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\AiHandController.cs:146)
+ 
+(Filename: D:/Workspace/Projects/Unity/PingPong/PingPong/Assets/Scripts/Gameplay/GameController.cs Line: 111)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.651751 ms
+System memory in use before: 18.0 MB.
+System memory in use after: 18.0 MB.
+
+Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 338.
+Total: 0.198514 ms (FindLiveObjects: 0.022482 ms CreateObjectMapping: 0.027592 ms MarkObjects: 0.106538 ms  DeleteObjects: 0.027848 ms)
+
+Game Over, You Win
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+GameController:ExecuteGameOverEvent() (at D:\Workspace\Projects\Unity\PingPong\PingPong\Assets\Scripts\Gameplay\GameController.cs:139)
+GameController:CardPlayedEvent(Int32, Int32) (at D:\Workspace\Projects\Unity\PingPong\PingPong\Assets\Scripts\Gameplay\GameController.cs:110)
+CardController:PlayCard() (at D:\Workspace\Projects\Unity\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\CardController.cs:194)
+AiHandController:PlayCardResponse() (at D:\Workspace\Projects\Unity\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\AiHandController.cs:140)
+<Think>c__Iterator1:MoveNext() (at D:\Workspace\Projects\Unity\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\AiHandController.cs:146)
+ 
+(Filename: D:/Workspace/Projects/Unity/PingPong/PingPong/Assets/Scripts/Gameplay/GameController.cs Line: 139)
+
+Current Position:-8
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+GameController:CardPlayedEvent(Int32, Int32) (at D:\Workspace\Projects\Unity\PingPong\PingPong\Assets\Scripts\Gameplay\GameController.cs:111)
+CardController:PlayCard() (at D:\Workspace\Projects\Unity\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\CardController.cs:194)
+AiHandController:PlayCardResponse() (at D:\Workspace\Projects\Unity\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\AiHandController.cs:140)
+<Think>c__Iterator1:MoveNext() (at D:\Workspace\Projects\Unity\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\AiHandController.cs:146)
+ 
+(Filename: D:/Workspace/Projects/Unity/PingPong/PingPong/Assets/Scripts/Gameplay/GameController.cs Line: 111)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.865850 ms
+System memory in use before: 18.0 MB.
+System memory in use after: 18.0 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 338.
+Total: 0.195704 ms (FindLiveObjects: 0.030658 ms CreateObjectMapping: 0.025548 ms MarkObjects: 0.124422 ms  DeleteObjects: 0.014051 ms)
+
+Game Over, You Win
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+GameController:ExecuteGameOverEvent() (at D:\Workspace\Projects\Unity\PingPong\PingPong\Assets\Scripts\Gameplay\GameController.cs:139)
+GameController:CardPlayedEvent(Int32, Int32) (at D:\Workspace\Projects\Unity\PingPong\PingPong\Assets\Scripts\Gameplay\GameController.cs:110)
+CardController:PlayCard() (at D:\Workspace\Projects\Unity\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\CardController.cs:194)
+AiHandController:PlayCardResponse() (at D:\Workspace\Projects\Unity\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\AiHandController.cs:140)
+<Think>c__Iterator1:MoveNext() (at D:\Workspace\Projects\Unity\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\AiHandController.cs:146)
+ 
+(Filename: D:/Workspace/Projects/Unity/PingPong/PingPong/Assets/Scripts/Gameplay/GameController.cs Line: 139)
+
+Current Position:-8
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+GameController:CardPlayedEvent(Int32, Int32) (at D:\Workspace\Projects\Unity\PingPong\PingPong\Assets\Scripts\Gameplay\GameController.cs:111)
+CardController:PlayCard() (at D:\Workspace\Projects\Unity\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\CardController.cs:194)
+AiHandController:PlayCardResponse() (at D:\Workspace\Projects\Unity\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\AiHandController.cs:140)
+<Think>c__Iterator1:MoveNext() (at D:\Workspace\Projects\Unity\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\AiHandController.cs:146)
+ 
+(Filename: D:/Workspace/Projects/Unity/PingPong/PingPong/Assets/Scripts/Gameplay/GameController.cs Line: 111)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.747303 ms
+System memory in use before: 18.0 MB.
+System memory in use after: 18.0 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 338.
+Total: 0.150482 ms (FindLiveObjects: 0.021972 ms CreateObjectMapping: 0.020950 ms MarkObjects: 0.096063 ms  DeleteObjects: 0.010986 ms)
+
+Game Over, You Lose
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+GameController:ExecuteGameOverEvent() (at D:\Workspace\Projects\Unity\PingPong\PingPong\Assets\Scripts\Gameplay\GameController.cs:137)
+GameController:CardPlayedEvent(Int32, Int32) (at D:\Workspace\Projects\Unity\PingPong\PingPong\Assets\Scripts\Gameplay\GameController.cs:110)
+CardController:PlayCard() (at D:\Workspace\Projects\Unity\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\CardController.cs:194)
+CardController:OnMouseUp() (at D:\Workspace\Projects\Unity\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\CardController.cs:212)
+UnityEngine.GameObject:SendMessage(String, Object, SendMessageOptions)
+UnityEngine.HitInfo:SendMessage(String) (at C:\buildslave\unity\build\Runtime\Export\MouseEvents.cs:18)
+UnityEngine.SendMouseEvents:SendEvents(Int32, HitInfo) (at C:\buildslave\unity\build\Runtime\Export\MouseEvents.cs:176)
+UnityEngine.SendMouseEvents:DoSendMouseEvents(Int32) (at C:\buildslave\unity\build\Runtime\Export\MouseEvents.cs:144)
+ 
+(Filename: D:/Workspace/Projects/Unity/PingPong/PingPong/Assets/Scripts/Gameplay/GameController.cs Line: 137)
+
+Current Position:-3
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+GameController:CardPlayedEvent(Int32, Int32) (at D:\Workspace\Projects\Unity\PingPong\PingPong\Assets\Scripts\Gameplay\GameController.cs:111)
+CardController:PlayCard() (at D:\Workspace\Projects\Unity\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\CardController.cs:194)
+CardController:OnMouseUp() (at D:\Workspace\Projects\Unity\PingPong\PingPong\Assets\Scripts\Gameplay\Hand\CardController.cs:212)
+UnityEngine.GameObject:SendMessage(String, Object, SendMessageOptions)
+UnityEngine.HitInfo:SendMessage(String) (at C:\buildslave\unity\build\Runtime\Export\MouseEvents.cs:18)
+UnityEngine.SendMouseEvents:SendEvents(Int32, HitInfo) (at C:\buildslave\unity\build\Runtime\Export\MouseEvents.cs:176)
+UnityEngine.SendMouseEvents:DoSendMouseEvents(Int32) (at C:\buildslave\unity\build\Runtime\Export\MouseEvents.cs:144)
+ 
+(Filename: D:/Workspace/Projects/Unity/PingPong/PingPong/Assets/Scripts/Gameplay/GameController.cs Line: 111)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.338266 ms
+System memory in use before: 18.0 MB.
+System memory in use after: 18.0 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 338.
+Total: 0.085077 ms (FindLiveObjects: 0.011496 ms CreateObjectMapping: 0.009453 ms MarkObjects: 0.057229 ms  DeleteObjects: 0.006642 ms)
+
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 2894 -> priority: 1 
-  Thread -> id: 230 -> priority: 1 
+  Thread -> id: 2300 -> priority: 1 
+  Thread -> id: 31a0 -> priority: 1 

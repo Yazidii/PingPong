@@ -5,21 +5,6 @@ using System;
 using UnityEngine.SceneManagement;
 using Assets.Scripts.Engine;
 
-/*
-TO DO
-
-    Lots of refactoring
-    Create end game
-    Render dotted and animated lines
-    Card movement turning animation
-    Static methods
-    Improve initialization
-    
-    Card persistence
-    Rounds
-
-    On new round don't discard cards
-*/
 
 public class GameController : MonoBehaviour {
 
